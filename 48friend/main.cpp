@@ -7,10 +7,10 @@ class StankFist {
 	private:
 		int stinkyVar;
 
-		friend void stinkysFriend(StankFist& sfo);
+		friend void stinkyFriend(StankFist& sfo);
 };
 
-void stinkysFriend(StankFist& sfo) {
+void stinkyFriend(StankFist& sfo) {
 	sfo.stinkyVar=99;
 	cout << sfo.stinkyVar << endl;
 }
@@ -18,4 +18,5 @@ void stinkysFriend(StankFist& sfo) {
 int main() {
 	StankFist bob;
 	stinkysFriend(bob);
+
 }
